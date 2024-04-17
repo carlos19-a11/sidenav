@@ -1,0 +1,30 @@
+<div class="title-container">
+  <div class="title">
+    <img src="/assets/img/icono.png" alt="Logo" class="logo">
+    <h1>Distriservicios</h1>
+  </div>
+</div>
+
+<div class="upload-container">
+  <div class="input-container">
+    <input type="text" [(ngModel)]="fileName" placeholder="Nombre del archivo" class="name-input">
+  </div>
+  <div class="input-container">
+    <label class="file-label">
+      <input type="file" (change)="onFilesSelected($event)" multiple accept=".pdf">
+      <img class="file-image" src="/assets/img/pdf.png" alt="PDF">
+      Subir archivos
+    </label>
+  </div>
+  <button class="upload-btn small-btn" (click)="uploadFiles()">Subir archivos</button>
+  <!-- Agregamos la clase small-btn para hacerlo más pequeño -->
+  <div class="files-info">
+    <p>Archivos subidos: {{ files.length }}</p>
+  </div>
+</div>
+
+<div class="upload-container" *ngIf="files.length > 0">
+  <div *ngFor="let file of files" class="uploaded-file">
+    <img class="file-icon" src="/assets/img/pdf.png" alt="PDF"> {{ file.name }}
+  </div>
+</div>

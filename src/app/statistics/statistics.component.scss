@@ -1,0 +1,56 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px; /* Ajusta el tamaño del logo según sea necesario */
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 24px; /* Ajusta el tamaño del nombre de la empresa según sea necesario */
+}
